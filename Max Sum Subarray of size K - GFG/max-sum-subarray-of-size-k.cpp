@@ -6,6 +6,8 @@ using namespace std;
 class Solution{   
 public:
     long maximumSumSubarray(int K, vector<int> &Arr , int N){
+        //edge case should be included 
+        //if number of elements are less than window size K
         int i=0,j=0;
         long sum=0,mx=INT_MIN;
         while(j<N){
