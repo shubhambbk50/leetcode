@@ -11,26 +11,16 @@ class Solution{
 public:
     int minimumDays(int S, int N, int M){
         // code here
-        int required=S*M;
-        vector<int>v(S,N);
-        for(int i=0;i<S; i++){
-            if((i+1)%7 == 0)
-                v[i]=0;
-        }
-        int sum=0,days=0;
-        for(int i=0;i<S;i++){
-            if(v[i]!=0){
-                sum+=v[i];days++;
-            }
-            if(sum>=required){
-                break;
-            }
-        }
-        if(sum<required){
+        int totalRequiredFood = M*S;
+        int noOfDaysShopIsAvailable = S-S/7;
+        int totalAvailableFood = N*noOfDaysShopIsAvailable;
+        
+        if(totalRequiredFood > totalAvailableFood){
             return -1;
         }
-        else
-            return days;
+        
+        //return ceil(totalRequiredFood/(float)N);
+        return ceil(totalRequiredFood/(1.0*N));
     }
 };
 
