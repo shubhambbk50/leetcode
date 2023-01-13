@@ -9,7 +9,7 @@ using namespace std;
 
 class Solution {
   public:
- #define ll long long
+     #define ll long long
     
     bool getBit(int mask, int i) {
         return mask & (1 << i);
