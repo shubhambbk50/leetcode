@@ -7,7 +7,6 @@ using namespace std;
 class Solution {
   public:
     string removePair(string s) {
-        // code here
         string ans = "";
         stack<char> st;
         for(int i = 0; i < s.size(); i++) {
@@ -22,6 +21,7 @@ class Solution {
             st.pop();
         }
         return ans = (ans == "" ? "-1" : ans);
+        // code here
     }
 };
 
