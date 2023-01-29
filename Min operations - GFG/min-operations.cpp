@@ -7,8 +7,7 @@ using namespace std;
 class Solution {
   public:
     int solve(int a, int b) {
-        // code here
-        if(a == b)
+if(a == b)
             return 0;
         
         int xval = a ^ b;
@@ -18,6 +17,7 @@ class Solution {
             
         return 2;
     }
+    
 };
 
 
