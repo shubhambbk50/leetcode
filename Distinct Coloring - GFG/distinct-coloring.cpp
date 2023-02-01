@@ -9,7 +9,7 @@ using namespace std;
 
 class Solution{   
 public:
-   long long int distinctColoring(int n, int r[], int g[], int b[]) {
+    long long int distinctColoring(int n, int r[], int g[], int b[]) {
 long long int dp[n][3];
 dp[0][0] = r[0];
 dp[0][1] = g[0];
