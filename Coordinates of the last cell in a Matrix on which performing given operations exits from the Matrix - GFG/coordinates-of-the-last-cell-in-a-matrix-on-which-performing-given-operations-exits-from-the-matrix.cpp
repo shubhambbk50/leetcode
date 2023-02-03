@@ -10,7 +10,7 @@ using namespace std;
 
 class Solution{
     public:
-   pair<int,int> endPoints(vector<vector<int>> matrix){
+    pair<int,int> endPoints(vector<vector<int>> matrix){
 
         int i=0,j=0;
 
