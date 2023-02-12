@@ -34,7 +34,7 @@ public:
 
 class Solution{
 public:
-    bool isprime(int n){
+   bool isprime(int n){
 
        if(n==0 || n==1) return false;
 
