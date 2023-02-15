@@ -10,7 +10,7 @@ using namespace std;
 
 class Solution{   
 public:
-    int water_flow(vector<vector<int>> &mat,int n,int m){
+   int water_flow(vector<vector<int>> &mat,int n,int m){
 
     bool in[n][m];
 
