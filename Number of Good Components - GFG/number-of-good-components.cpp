@@ -10,7 +10,7 @@ using namespace std;
 
 class Solution {
   public:
-    void dfs(int vertex,vector<vector<int>>& adj,int val,int &flag, vector<int> &visited,int &cv)
+   void dfs(int vertex,vector<vector<int>>& adj,int val,int &flag, vector<int> &visited,int &cv)
 
     {
 
