@@ -9,7 +9,7 @@ using namespace std;
 class Solution{   
   public:
     string secondSmallest(int S, int D){
-        // code here '
+        // code here 
         if(S==1 || D==1) return "-1";
          if(S>9*D) return "-1";
          if(S==9*D) return "-1";
