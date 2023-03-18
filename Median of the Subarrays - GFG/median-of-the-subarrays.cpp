@@ -7,7 +7,7 @@ using namespace std;
 //User function Template for C++
 class Solution {
   public:
-     long long solve(int n, vector<int>&ans,  int m){
+    long long solve(int n, vector<int>&ans,  int m){
         
         // int mp[2*n+1];
         // memset(mp,0,sizeof(mp));
