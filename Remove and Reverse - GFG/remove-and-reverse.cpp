@@ -7,7 +7,7 @@ using namespace std;
 //User function Template for C++
 class Solution {
   public:
-    string removeReverse(const string &s) {
+   string removeReverse(const string &s) {
         
         array<uint32_t, 128> counter;
         counter.fill(0);
