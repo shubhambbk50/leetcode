@@ -11,7 +11,6 @@ class Solution {
   public:
     long long int minOperations(int N) {
         // Code here
-        
          long long int ans , x ;
         int i = 0 , j = N-1 ;
         x = N/2 ;
