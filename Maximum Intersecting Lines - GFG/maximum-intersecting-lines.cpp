@@ -12,6 +12,7 @@ class Solution {
   public:
     int maxIntersections(vector<vector<int>> lines, int N) {
         // Code here
+        
            map<int, int> mp;
         for(int i=0; i<N; i++){
             mp[lines[i][0]]++;
