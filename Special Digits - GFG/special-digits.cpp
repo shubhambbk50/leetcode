@@ -6,7 +6,7 @@ using namespace std;
 // } Driver Code Ends
 class Solution {
   public:
-    const int m=1e9+7;
+   const int m=1e9+7;
     long long fact[100005];
     
     long long binexp(long long x,long long n){
