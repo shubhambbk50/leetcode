@@ -11,7 +11,7 @@ using namespace std;
 class Solution{
     public:
     bool wifiRange(int N, string S, int X){
-        // code here'
+        // code here
         vector <int> ch(N,0);
         for(int i = 0;i < N;i++)
         {
