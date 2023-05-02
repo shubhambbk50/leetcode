@@ -10,7 +10,7 @@ using namespace std;
 
 class Solution{
     public:
-    int maxSweetness(vector<int>& a, int n, int k) {
+  int maxSweetness(vector<int>& a, int n, int k) {
         
         int l = 1;
         int h = 0;
