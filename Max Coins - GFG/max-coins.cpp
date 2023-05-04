@@ -10,7 +10,7 @@ using namespace std;
 
 class Solution{
 public:
-     vector<vector<int>> dp;
+    vector<vector<int>> dp;
   
     int binarySearch(int i, int j,int end, vector<vector<int>> &ranges){
         int res=ranges.size();
