@@ -86,7 +86,7 @@ Node* buildTree(string str)
 
 class Solution{
 public:
-     int ans;
+   int ans;
 public:
     unordered_set<int>calc(Node *root, int &k)
     {
