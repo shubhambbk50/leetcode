@@ -31,7 +31,7 @@ struct Node
 // new binary tree formed
 class Solution{
   public:
-   Node* Ans(int pre[],int l,int r){
+    Node* Ans(int pre[],int l,int r){
         int mid =(l+r)/2;
         Node* temp=new Node(pre[l]);
         if(l<r){
