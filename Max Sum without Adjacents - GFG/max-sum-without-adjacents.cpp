@@ -8,28 +8,29 @@ using namespace std;
 //User function template for C++
 class Solution{
 public:	
+    int f(int *a, int n, int *dp){
+        if(n == 0){
+	       return a[0]; 
+	    }
+	    if(n < 0){
+	        return 0;
+	    }
+	    
+	    if(dp[n] !=0 ) return dp[n];
+	    
+	    int pick = a[n] + f(a, n - 2, dp); dp[n] = pick;
+	    int notpick = 0 + f(a, n - 1, dp);
+	    
+	    
+	    
+	    return dp[n] = max(pick, notpick);
+    }
 	// calculate the maximum sum with out adjacent
-	int findMaxSum(int *arr, int n) {
+	int findMaxSum(int *a, int n) {
 	    // code here
-	     vector<int>dp(n+3,-1);
-
-     dp[n]=0;
-
-     dp[n+1]=0;
-
-     dp[n+2]=0;
-
-     for(int i=n-1;i>=0;i--){
-
-        int a=dp[i+2]+arr[i];
-
-        int b=dp[i+3]+arr[i];
-
-        dp[i]=max(a,b);
-
-     }
-
-     return max(dp[0],dp[1]);
+	    int dp[n+1] = {0};
+	    return f(a, n - 1, dp);
+	    
 	}
 };
 
