@@ -1,20 +1,22 @@
 class Solution {
 public:
     bool isHappy(int n) {
-        int cnt = 0;
-        while(cnt <= 10000){
-            if(n==1){
-                return true;
+        map<int,int>mp;
+        while(n!=1){
+            if(n==1) return 1;
+            if(mp.find(n) != mp.end()){
+                return false;
             }
-            int temp = n; int num = 0;
-            while(temp>0){
+            mp[n]++;
+            int temp = n;
+            int num = 0;
+            while(temp > 0){
                 int temp2 = (temp%10) * (temp%10);
                 num += temp2;
                 temp = temp/10;
-                cnt++;
-            }                
+            }
             n = num;
         }
-        return false;
+        return true;
     }
 };
