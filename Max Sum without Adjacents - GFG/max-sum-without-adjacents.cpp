@@ -21,9 +21,9 @@ public:
 	    int pick = a[n] + f(a, n - 2, dp); dp[n] = pick;
 	    int notpick = 0 + f(a, n - 1, dp);
 	    
+	    dp[n] = max(pick, notpick);
 	    
-	    
-	    return dp[n] = max(pick, notpick);
+	    return dp[n];
     }
 	// calculate the maximum sum with out adjacent
 	int findMaxSum(int *a, int n) {
